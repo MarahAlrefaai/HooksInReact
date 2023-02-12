@@ -1,9 +1,9 @@
-import { useState,  useContext, createContext } from "react";
+import { useState, useContext, createContext } from "react";
 import ReactDOM from "react-dom/client";
 
 const UserContext = createContext("");
 
-export default function Component1() {
+export default function UserContextHooh() {
   const [user, setUser] = useState("Jesse Hall");
 
   return (
@@ -51,4 +51,3 @@ function Component5() {
     </>
   );
 }
-

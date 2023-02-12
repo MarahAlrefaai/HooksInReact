@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import MemoHook from "./useMemoHook/useMemoHook";
 import CallBackHook from "./usecallback/useCallbackHook";
 import UsereducerHook from "./useReducer/useReducer";
+import UserContextHooh from "./userContext/useContext";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -37,6 +38,15 @@ function App() {
       >
         <h1>UsereducerHook</h1>
         <UsereducerHook />
+      </div>
+      <div
+        style={{
+          backgroundColor: "#ABEBC6",
+          height: 500,
+        }}
+      >
+        <h1>UseContext</h1>
+        <UserContextHooh />
       </div>
     </>
   );
