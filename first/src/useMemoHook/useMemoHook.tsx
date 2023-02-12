@@ -26,7 +26,7 @@ export default function MemoHook() {
       <span style={{ margin: 100 }}>
         <button
           style={{
-            backgroundColor: "pink",
+            backgroundColor: "#F1C40F ",
             border: 0.25,
             height: 50,
             width: 300,
@@ -41,7 +41,7 @@ export default function MemoHook() {
       <span style={{ margin: 100 }}>
         <button
           style={{
-            backgroundColor: "pink",
+            backgroundColor: "#F1C40F ",
             border: 0.25,
             height: 50,
             width: 300,

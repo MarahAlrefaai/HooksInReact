@@ -9,7 +9,7 @@ export default function CallBackHook() {
 
   const getItems = useCallback(() => {
     return [number, number + 1, number + 2];
-  }, [number]);
+  },[number]);
 
   const theme = {
     backgroundColor: dark ? "#333" : "#fff",
@@ -18,31 +18,27 @@ export default function CallBackHook() {
   return (
     <>
       <span style={{ margin: 100 }}>
-        <input
-          type={"number"}
-          value={number}
-          onChange={(e) => {
-            setNumber(parseInt(e.target.value));
-          }}
+        <input 
+        type={"number"}
+        value={number}
+        onChange={e=>{setNumber(parseInt(e.target.value))}}
         />
         <button
           style={{
             backgroundColor: theme.color,
-
+            
             height: 50,
             width: 300,
             borderRadius: 100,
-            color: "orange",
+            color:"orange"
           }}
           type="button"
-          onClick={(e) => {
-            setDark(!dark);
-          }}
+          onClick={e =>{setDark(!dark )}}
         >
-          theme
+          theme 
         </button>
       </span>
-      <List getItems={getItems} />
+      <List getItems={getItems}/>
     </>
   );
 }
