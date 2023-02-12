@@ -19,6 +19,9 @@ export default function MemoHook() {
     while (i < 2000000000) {
       i++;
     }
+
+
+    
     return incrementOne % 2 == 0;
   }, [incrementOne]);
   return (
